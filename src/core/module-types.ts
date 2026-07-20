@@ -12,7 +12,6 @@ export type DashboardWidgetId =
   | 'chart_margin_category'
   | 'chart_margin_timeline'
   | 'chart_upload_timeline'
-  | 'alert_monitor'
   | 'alert_hold'
   | 'alert_upload'
 

@@ -9,7 +9,7 @@ export default {
   icon: ShoppingCart,
   navKey: 'nav.buyer',
   descKey: 'modules.buyerDesc',
-  dashboardWidgets: ['buyer_autobuy', 'buyer_monitor', 'alert_monitor'],
+  dashboardWidgets: ['buyer_autobuy', 'buyer_monitor'],
   analyticsSections: [],
   loadPage: () => import('./BuyerPage').then((m) => ({ default: m.BuyerPage }))
 } satisfies ModuleManifest

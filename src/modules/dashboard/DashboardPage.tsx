@@ -273,9 +273,6 @@ export function DashboardPage(): React.ReactNode {
   const alerts = useMemo(() => {
     if (!token || !data) return []
     const list: Array<{ key: string; tone: 'warn' | 'info'; text: string }> = []
-    if (isWidgetVisible('alert_monitor') && !data.stats.monitorRunning && data.stats.watchFilters > 0) {
-      list.push({ key: 'monitor', tone: 'warn', text: t('dashboard.alertMonitorOff', { count: data.stats.watchFilters }) })
-    }
     if (isWidgetVisible('alert_hold') && (profile?.hold ?? 0) > 0 && holdPct >= 15) {
       list.push({ key: 'hold', tone: 'warn', text: t('dashboard.alertHold', { pct: holdPct.toFixed(0) }) })
     }
