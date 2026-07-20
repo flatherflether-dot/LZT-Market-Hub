@@ -44,7 +44,7 @@
 Понадобится [Node.js](https://nodejs.org) версии 20 или новее.
 
 ```bash
-git clone <адрес репозитория>
+git clone https://github.com/flatherflether-dot/LZT-Market-HUB.git
 cd lzt-market-hub
 npm install
 npm run dev
