@@ -1,0 +1,33 @@
+appId: com.lzt.markethub
+productName: LZT Market Hub
+copyright: Copyright © 2026
+directories:
+  buildResources: build
+  output: release
+files:
+  - out/**/*
+  - package.json
+extraResources:
+  - from: build
+    to: icons
+    filter:
+      - icon.png
+      - tray.png
+      - tray-active.png
+asarUnpack:
+  - node_modules/better-sqlite3/**/*
+mac:
+  icon: build/icon.icns
+  target:
+    - dmg
+    - zip
+  category: public.app-category.business
+win:
+  icon: build/icon.ico
+  target:
+    - nsis
+  artifactName: ${productName}-${version}-Setup.${ext}
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+publish: null

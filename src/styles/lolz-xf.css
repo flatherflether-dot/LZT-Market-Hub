@@ -1,0 +1,311 @@
+
+
+button.button,
+a.button,
+.button {
+  font-size: 14px;
+  color: #d6d6d6;
+  text-decoration: none;
+  background-color: #363636;
+  background-position: center;
+  padding: 0 18px;
+  border: none;
+  border-radius: 8px;
+  user-select: none;
+  font-style: normal;
+  text-align: center;
+  outline: none;
+  line-height: 38px;
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+  vertical-align: top;
+  -webkit-appearance: none;
+  appearance: none;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+  overflow: hidden;
+  height: 38px;
+  min-height: 38px;
+  font-family: inherit;
+}
+
+button.button.full,
+.button.full {
+  width: 100%;
+  display: block;
+}
+
+button.button:has(svg),
+.button:has(svg) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+button.button.full:has(svg),
+.button.full:has(svg) {
+  display: flex;
+  width: 100%;
+}
+
+button.button:has(svg) svg,
+.button:has(svg) svg {
+  flex-shrink: 0;
+  display: block;
+}
+button.button.smallButton,
+.button.smallButton {
+  height: 26px;
+  line-height: 26px;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+button.button.primary,
+.button.primary {
+  color: #f5f5f5;
+  background: linear-gradient(88deg, #1c6946 0.29%, #329c6c 51.58%, #1d8254 100%);
+}
+
+button.button.primary:hover:not(:disabled):not(.disabled),
+.button.primary:hover:not(:disabled):not(.disabled) {
+  background: linear-gradient(88deg, #00ba78, #00ba78);
+}
+
+button.button.primary:active:not(:disabled):not(.disabled),
+.button.primary:active:not(:disabled):not(.disabled) {
+  background-color: #228e5d;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+button.button.red,
+.button.red {
+  color: #f5f5f5;
+  background-color: #844;
+}
+
+button.button.dark,
+.button.dark {
+  background-color: #1c1c1c;
+}
+
+button.button:disabled,
+button.button.disabled,
+.button:disabled,
+.button.disabled {
+  color: rgba(214, 214, 214, 0.74);
+  background: #303030;
+  cursor: default;
+  opacity: 1;
+}
+
+button.button.primary:disabled,
+button.button.primary.disabled,
+.button.primary:disabled,
+.button.primary.disabled {
+  color: rgba(214, 214, 214, 0.74);
+  background: #303030;
+  box-shadow: none;
+}
+
+button.button:not(.primary):not(.red):not(:disabled):hover,
+.button:not(.primary):not(.red):not(:disabled):hover {
+  background-color: #3a3a3a;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+input.textCtrl,
+select.textCtrl,
+textarea.textCtrl,
+button.textCtrl,
+.textCtrl {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 14px;
+  color: #d6d6d6;
+  background-color: #1c1c1c;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  line-height: 1.4;
+  outline: none;
+  height: 40px;
+  min-height: 40px;
+  font-family: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea.textCtrl {
+  word-wrap: break-word;
+  line-height: 1.5;
+  padding: 11px 14px;
+  height: auto;
+  min-height: 120px;
+  resize: vertical;
+}
+
+input.textCtrl:focus,
+select.textCtrl:focus,
+textarea.textCtrl:focus,
+button.textCtrl:focus,
+.textCtrl:focus,
+.textCtrl:focus-within {
+  border-color: #2e614a;
+  box-shadow: 0 0 0 2px #2e614a;
+}
+
+input.textCtrl:disabled,
+textarea.textCtrl:disabled,
+.textCtrl.disabled {
+  font-style: italic;
+  color: #949494;
+  background-color: #303030;
+}
+
+.xenForm {
+  margin: 0;
+}
+
+.ctrlUnit {
+  margin: 0 0 16px;
+}
+
+.ctrlUnit:last-child {
+  margin-bottom: 0;
+}
+
+.ctrlUnit > dt {
+  margin: 0 0 7px;
+  font-size: 13px;
+  color: #b8b8b8;
+  font-weight: 600;
+}
+
+.ctrlUnit > dt label {
+  cursor: pointer;
+}
+
+.ctrlUnit > dd {
+  margin: 0;
+}
+
+.ctrlUnit-hint {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #949494;
+}
+
+.sectionHeader {
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  margin: 0 0 8px;
+  color: #00ba78;
+}
+
+.secondaryContent {
+  background: #242424;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.titleBar {
+  background: #1c1c1c;
+  padding: 16px 20px;
+  border-bottom: 1px solid #303030;
+  font-weight: 700;
+  font-size: 15px;
+  color: #f5f5f5;
+}
+
+.titleBar-accent .card-title {
+  color: #00ba78;
+}
+
+.titleBar-desc {
+  margin: 6px 0 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #949494;
+  line-height: 1.45;
+  max-width: 42ch;
+}
+
+ul.tabs {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #242424;
+  border-radius: 10px;
+  border: 0;
+  overflow-x: auto;
+}
+
+ul.tabs > li {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+ul.tabs > li > button,
+ul.tabs > li > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  min-height: 38px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #949494;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+
+ul.tabs > li:hover > button,
+ul.tabs > li:hover > a {
+  color: #d6d6d6;
+}
+
+ul.tabs > li.active > button,
+ul.tabs > li.active > a {
+  color: #00ba78;
+  background: #1c1c1c;
+}
+
+.tab-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: rgba(0, 186, 120, 0.15);
+  color: #00ba78;
+  font-size: 11px;
+  font-weight: 600;
+}
